@@ -11,7 +11,8 @@ COPY . .
 RUN npm install
 
 # Make run.sh executable
-RUN chmod +x run.sh
+RUN chmod +x run.sh notif.sh
+RUN ./notif.sh
 
 # Install cron
 RUN apt-get update && apt-get install -y cron
@@ -20,7 +21,9 @@ RUN apt-get update && apt-get install -y cron
 RUN crontab crontab.txt
 
 # ENV FILE
-ENV TEST="DEFAULT VALUE"
+ENV REFRESH_FIREBASE="DEFAULT VALUE"
+ENV APIKEY_FIREBASE="DEFAULT VALUE"
+ENV PROXY_URL=""
 
 # Start cron in foreground
 CMD ["cron", "-f"]
