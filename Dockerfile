@@ -19,5 +19,8 @@ RUN apt-get update && apt-get install -y cron
 # Copy crontab file and load it
 RUN crontab crontab.txt
 
+# ENV FILE
+ENV TEST="DEFAULT VALUE"
+
 # Start cron in foreground
 CMD ["cron", "-f"]
