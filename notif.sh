@@ -6,3 +6,6 @@ cd "$(dirname "$0")" || { echo "Failed to cd into script directory"; exit 1; } #
 
 echo "Script running..."
 echo "Data update every 01:00 AM UTC"
+
+# Load ENV file
+/usr/local/bin/npx ts-node scripts/loadenv
