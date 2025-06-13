@@ -23,7 +23,7 @@ request.onsuccess = function(event) {
 
 Copy the output then save in .env file
 ```bash
-APIKEY_FIREBASE=YOUR_APIKEY_HERE
+APIKEY_FIREBASE=YOUR_APIKEY_FIREBASE_HERE
 ```
 
 
@@ -49,7 +49,7 @@ request.onsuccess = function(event) {
 ```
 Copy the output then save in .env file
 ```bash
-REFRESH_FIREBASE=YOUR_APIKEY_HERE
+REFRESH_FIREBASE=YOUR_REFRESH_FIREBASE_HERE
 ```
 
 
