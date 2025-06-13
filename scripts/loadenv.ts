@@ -16,7 +16,7 @@ async function main() {
         if(error) {
             console.error(error)
         }else{
-            console.log(`successfulyy saved to ${fileName}`)
+            console.log(`successfulyy load env to ${fileName}`)
         }
     } )
 }
