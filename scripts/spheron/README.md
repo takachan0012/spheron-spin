@@ -23,7 +23,7 @@ request.onsuccess = function(event) {
 
 Copy the output then save in .env file
 ```bash
-APIKEY_FIREBASE=YOUR_APIKEY_HERE
+APIKEY_FIREBASE=YOUR_APIKEY_FIREBASE_HERE
 ```
 
 
@@ -49,16 +49,62 @@ request.onsuccess = function(event) {
 ```
 Copy the output then save in .env file
 ```bash
-REFRESH_FIREBASE=YOUR_APIKEY_HERE
+REFRESH_FIREBASE=YOUR_REFRESH_FIREBASE_HERE
 ```
 
 
 ## [ OPTIONAL ] Set up proxy
 
-You can skip this proxy_url key in .env, however if you wanna setting up the proxy_url, you can add as below:
+You can skip this proxy_url key in .env, Just add
+```bash
+PROXY_URL=""
+```
+however if you wanna setting up the proxy_url, you can add as below:
 ```bash
 PROXY_URL=http://username:password@ip:port
 ```
 
 ⚠️ **note** 
 Change username:password@ip:port using your real proxy. don't have? you can get [here](https://www.webshare.io/?referral_code=nk30zy0tpl37)
+
+
+## Docker
+
+Install docker in your computer, ⚠️ **note** you can skip if already installed:
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+read docs for detail [here](https://docs.docker.com/engine/install/ubuntu/)
+
+check docker version:
+```bash
+docker --version
+```
+
+Pull the image
+```bash
+docker pull haiiru/spheron:latest
+```
+
+Run container
+```bash
+docker run -it --name winsnip/spheron --env-file .env -d haiiru/spheron:latest
+```
+
+Check logs
+```bash
+docker logs -f winsnip/spheron
+```
+
+
+## **Join Telegram Winsnip**
+
+Stay updated and connect with the Winsnip community:
+
+Channel: https://t.me/winsnip
+
+Group Chat: https://t.me/winsnip_hub
+
+This ensures users can join the Telegram community easily and stay engaged with updates and discussions.
+
+## **Have suggestions or improvements? Feel free to contribute!**
