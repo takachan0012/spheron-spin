@@ -83,9 +83,28 @@ docker --version
 
 Pull the image
 ```bash
-docker pull 
+docker pull haiiru/spheron:latest
 ```
 
 Run container
+```bash
+docker run -it --name winsnip/spheron --env-file .env -d haiiru/spheron:latest
 ```
-docker run -d --name spheron-spin 
+
+Check logs
+```bash
+docker logs -f winsnip/spheron
+```
+
+
+## **Join Telegram Winsnip**
+
+Stay updated and connect with the Winsnip community:
+
+Channel: https://t.me/winsnip
+
+Group Chat: https://t.me/winsnip_hub
+
+This ensures users can join the Telegram community easily and stay engaged with updates and discussions.
+
+## **Have suggestions or improvements? Feel free to contribute!**
