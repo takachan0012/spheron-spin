@@ -23,8 +23,9 @@ request.onsuccess = function(event) {
 
 Copy the output then save in .env file
 ```bash
-APIKEY_FIREBASE=YOUR_APIKEY_FIREBASE_HERE
+echo APIKEY_FIREBASE=YOUR_APIKEY_FIREBASE_HERE > .env
 ```
+
 
 
 ## Get refresh token
@@ -49,23 +50,25 @@ request.onsuccess = function(event) {
 ```
 Copy the output then save in .env file
 ```bash
-REFRESH_FIREBASE=YOUR_REFRESH_FIREBASE_HERE
+echo REFRESH_FIREBASE=YOUR_REFRESH_FIREBASE_HERE >> .env
 ```
+
 
 
 ## [ OPTIONAL ] Set up proxy
 
 You can skip this proxy_url key in .env, Just add
 ```bash
-PROXY_URL=""
+echo PROXY_URL="" >> .env
 ```
 however if you wanna setting up the proxy_url, you can add as below:
 ```bash
-PROXY_URL=http://username:password@ip:port
+echo PROXY_URL=http://username:password@ip:port >> .env
 ```
 
 ⚠️ **note** 
 Change username:password@ip:port using your real proxy. don't have? you can get [here](https://www.webshare.io/?referral_code=nk30zy0tpl37)
+
 
 
 ## Docker
@@ -97,6 +100,7 @@ docker logs -f winsnip/spheron
 ```
 
 
+
 ## **Join Telegram Winsnip**
 
 Stay updated and connect with the Winsnip community:
@@ -106,5 +110,7 @@ Channel: https://t.me/winsnip
 Group Chat: https://t.me/winsnip_hub
 
 This ensures users can join the Telegram community easily and stay engaged with updates and discussions.
+
+
 
 ## **Have suggestions or improvements? Feel free to contribute!**
