@@ -91,12 +91,12 @@ docker pull haiiru/spheron:latest
 
 Run container
 ```bash
-docker run -it --name winsnip/spheron --env-file .env -d haiiru/spheron:latest
+docker run -it --name winsnip-spheron --env-file .env -d haiiru/spheron:latest
 ```
 
 Check logs
 ```bash
-docker logs -f winsnip/spheron
+docker logs -f winsnip-spheron
 ```
 
 
